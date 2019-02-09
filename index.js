@@ -3,9 +3,7 @@
 var inspect = require('util').inspect;
 
 var appendType = require('append-type');
-var Map = require('es6-map');
 var pauseFn = require('pause-fn');
-var WeakMap = require('es6-weak-map');
 
 var PAUSE_ERROR = 'Expected an <Object> whose methods are paused by `pauseMethods()`';
 var pausedObjMethodsMap = new WeakMap();

@@ -30,8 +30,6 @@
 	],
 	"dependencies": {
 		"append-type": "^1.0.2",
-		"es6-map": "^0.1.5",
-		"es6-weak-map": "^2.0.2",
 		"pause-fn": "^0.1.0"
 	},
 	"devDependencies": {
@@ -39,7 +37,7 @@
 		"eslint": "^5.13.0",
 		"nyc": "^13.2.0",
 		"nyc-config-common": "^1.0.1",
-		"tape": "^4.9.2"
+		"tape": "^4.10.0"
 	},
 	"eslintConfig": {
 		"extends": "@shinnn",
