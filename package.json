@@ -29,7 +29,7 @@
 		"switching"
 	],
 	"dependencies": {
-		"append-type": "^1.0.2",
+		"inspect-with-kind": "^1.0.5",
 		"pause-fn": "^0.1.0"
 	},
 	"devDependencies": {
@@ -42,11 +42,8 @@
 	"eslintConfig": {
 		"extends": "@shinnn",
 		"rules": {
-			"no-var": "off",
-			"prefer-arrow-callback": "off",
 			"prefer-rest-params": "off",
-			"prefer-spread": "off",
-			"prefer-template": "off"
+			"prefer-spread": "off"
 		}
 	},
 	"nyc": {

@@ -55,7 +55,7 @@ test('pauseMethods()', async t => {
 
 	t.throws(
 		() => pauseMethods(-0),
-		/^TypeError: Expected an <Object>, but got a non-object value 0 \(number\)\./u,
+		/^TypeError: Expected an <Object>, but got a non-object value -0 \(number\)\./u,
 		'should throw an error when it takes a non-object value.'
 	);
 
@@ -83,7 +83,7 @@ test('pauseMethods.resume()', async t => {
 
 	t.throws(
 		() => pauseMethods.resume(Symbol('a')),
-		/^TypeError: Expected an <Object>, but got a non-object value Symbol\(a\) \(symbol\)\./u,
+		/^TypeError: Expected an <Object>, but got a non-object value Symbol\(a\)\./u,
 		'should throw an error when it takes a non-object argument.'
 	);
 
@@ -95,7 +95,7 @@ test('pauseMethods.resume()', async t => {
 
 	t.throws(
 		() => pauseMethods.resume({}),
-		/^Error: Expected an <Object> whose methods are paused by `pauseMethods\(\)`, but got \{\} which is not paused by `pauseMethods\(\)`\./u,
+		/^Error: Expected an <Object> whose methods are paused by `pauseMethods\(\)`, but got \{\} \(object\) which is not paused by `pauseMethods\(\)`\./u,
 		'should throw an error when it takes an object that hasn\'t been paused.'
 	);
 
