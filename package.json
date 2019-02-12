@@ -1,6 +1,6 @@
 {
 	"name": "pause-methods",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Pause/resume execution of an object's methods",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"repository": "shinnn/pause-methods",
@@ -30,7 +30,7 @@
 	],
 	"dependencies": {
 		"inspect-with-kind": "^1.0.5",
-		"pause-fn": "^0.1.0"
+		"pause-fn": "^0.3.0"
 	},
 	"devDependencies": {
 		"@shinnn/eslint-config": "^6.8.10",
