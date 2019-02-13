@@ -67,7 +67,13 @@ test('pauseMethods()', async t => {
 
 	t.throws(
 		() => pauseMethods(),
-		/^TypeError: Expected an <Object>, but got a non-object value undefined\./u,
+		/^RangeError: Expected 1 argument \(<Function>\), but got no arguments\./u,
+		'should throw an error when it takes no arguments.'
+	);
+
+	t.throws(
+		() => pauseMethods({}, {}),
+		/^RangeError: Expected 1 argument \(<Function>\), but got 2 arguments\./u,
 		'should throw an error when it takes no arguments.'
 	);
 
@@ -101,8 +107,14 @@ test('pauseMethods.resume()', async t => {
 
 	t.throws(
 		() => pauseMethods.resume(),
-		/^TypeError: Expected an <Object>, but got a non-object value undefined\./u,
+		/^RangeError: Expected 1 argument \(<Function>\), but got no arguments\./u,
 		'should throw an error when it takes no arguments.'
+	);
+
+	t.throws(
+		() => pauseMethods.resume({}, {}),
+		/^RangeError: Expected 1 argument \(<Function>\), but got 2 arguments\./u,
+		'should throw an error when it takes too many arguments.'
 	);
 
 	t.end();

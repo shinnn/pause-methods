@@ -83,7 +83,7 @@ const pausedFs = pauseMethods(fs.promises);
   await pausedFs.writeFile('./a', 'foo'); // ./a is not created here
   await pausedFs.mkdir('./b'); // ./b is not created here
 
-  pauseFs.resume(); //=> ./a and ./b are created here
+  pauseFs.resume(); // ./a and ./b are created here
 })();
 ```
 
