@@ -1,6 +1,6 @@
 {
 	"name": "pause-methods",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Pause/resume execution of an object's methods",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"repository": "shinnn/pause-methods",
