@@ -54,7 +54,7 @@ function pauseMethods(...args) {
 	const methods = new Map();
 
 	for (const key of Object.keys(obj)) {
-		const {value, writable} = Object.getOwnPropertyDescriptor(obj, key);
+		const {value, writable} = Reflect.getOwnPropertyDescriptor(obj, key);
 
 		if (typeof value !== 'function' || !writable) {
 			continue;
